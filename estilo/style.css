@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+header{
+    color: blueviolet;
+    background-color: aqua;
+    text-align: center;
+}
+
+nav{
+    color: white;
+    background-color: black;
+}
