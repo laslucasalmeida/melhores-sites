@@ -1,12 +1,101 @@
 @charset "UTF-8";
 
-header{
-    color: blueviolet;
-    background-color: aqua;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
 }
 
+:root{
+    --cor0: #C5FFFD;
+    --cor1: #88D9E6;
+    --cor2: #191716;
+    --cor3: #2b4141;
+    --cor4: #EFD28D;
+    --cor5: #004BA8;
+    --cor6: #A2A77F;
+
+    --fonte-destaque:'Kdam Thmor Pro', sans-serif;
+    --fonte-android: 'Android', sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor3);
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor2));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1{
+    font-family: var(--fonte-destaque);
+    font-size: 1.8em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+
+}
 nav{
-    color: white;
-    background-color: black;
+    background-color: var(--cor2);
+    padding: 10px;
+    box-shadow:  0px 7px 7px rgba(0, 0, 0, 0.192);
+}
+nav > a{
+    color: var(--cor5);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .3s;
+}
+
+nav a:hover{
+    background-color: var(--cor4);
+    color: var(--cor5);
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--cor6);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+  
+}
+
+main h1{
+    color: var(--cor2);
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 2em;
+    text-align: center;
+    font: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    font-family: var(--fonte-android);
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
 }
