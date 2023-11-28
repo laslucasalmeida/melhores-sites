@@ -78,24 +78,19 @@ main{
 }
 
 main h1{
-    color: var(--cor2);
+    color:var(--cor2);
     font-family:Arial, Helvetica, sans-serif;
-    font-weight: normal;
     font-size: 2em;
     text-align: center;
-    font: bold;
+   
+
 }
 
-main a{
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--cor5);
-    background-color: var(--cor1);
-    padding: 2px 6px;
-    font-family: var(--fonte-android);
-}
-
-main a:hover{
-    text-decoration: underline;
-    color: var(--cor2);
+main p {
+    color: white;
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.3em;
+    line-height: 2em;
 }
