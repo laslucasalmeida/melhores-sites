@@ -44,6 +44,9 @@ header > h1{
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
 
 }
+h1{
+    margin-top: 10px;
+}
 nav{
     background-color: var(--cor2);
     padding: 10px;
@@ -93,4 +96,10 @@ main p {
     text-indent: 30px;
     font-size: 1.3em;
     line-height: 2em;
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
 }
